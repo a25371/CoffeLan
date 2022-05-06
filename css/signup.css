@@ -1,0 +1,110 @@
+  /*General*/
+  body{
+    background-color:#4aaf2b;
+}
+
+  /*Caja Formulario*/
+  .caja {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 80px 0;
+    height: 400px;
+    text-align: center;
+  }
+  .caja h1 {
+    font-size: 40px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-put;
+    font-weight: 200;
+  }
+  /*Estilo caja datos*/
+.datos{
+  text-align: left;
+}
+
+  /*Boton Animado Enviar*/
+.enviar {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #4aaf2b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 16px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .enviar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .enviar span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .enviar:hover span {
+    padding-right: 25px;
+  }
+  
+  .enviar:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  /*Boton Animado Restablecer*/
+  .reset {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 16px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .reset span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .reset span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .reset:hover span {
+    padding-right: 25px;
+  }
+  
+  .reset:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .checks{
+    text-align: left;
+  }

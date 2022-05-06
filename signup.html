@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/signup.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <div class="caja">
+        <form>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inputNombre">First Name:</label>
+                        <input type="text" class="form-control" name="NAME" id="inputNombre" placeholder="John" maxlength="50" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inputApellido">Last Name:</label>
+                        <input type="text" class="form-control" name="LNAME" id="inputApellido" placeholder="Doe" maxlength="75" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">E-mail:</label>
+                <input type="email" class="form-control" id="inputEmail" name="EMAIL" placeholder="Example@example.com" maxlength="75" required>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inputPhone">Phone Number:</label>
+                        <input type="tel" class="form-control" id="inputPhone" name="PHONE" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inputApellido">Date of Birth:</label>
+                        <input type="date" class="form-control" id="inputDate" name="DATE" max="2000-13-13"  required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputDir">Address:</label>
+                <input type="text" class="form-control" id="inputDir" name="ADDRESS" placeholder="We need your address to deliver our products!" maxlength="50" required>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inputPass">Password:</label>
+                        <input type="password" class="form-control" name="PASSWORD" id="inputPass" placeholder="Password" maxlength="20" minlength="7" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inputRepPass">Repeat Password:</label>
+                        <input type="password" class="form-control" id="inputRepPass" placeholder="Password" maxlength="20" minlength="7" required>
+                    </div>
+                </div>
+            </div>
+            <div class="checks">
+
+                    <input type="checkbox" id="checkTos" name="check1" value="ToS">
+                    <label for="checkTos"> I have read the Terms and Policies and agree to them.</label><br>
+                    <input type="checkbox" id="checkOffers" name="check2" value="offers">
+                    <label for="checkOffers"> I would like to recieve offers to my email.</label><br>
+                    <input type="checkbox" id="checkNewsletters" name="check3" value="newsletter">
+                    <label for="checkNewsletters"> I would like to subscribe to the monthly newsletter.</label>
+
+            </div>
+                       
+            <div>
+                <input type="button" onclick="CheckInput()" class="enviar"
+                style="vertical-align:middle" value="Sign Up">
+                <input type="reset" onclick="limpiarDatos()" class="reset" style="vertical-align:middle" value="Clear">
+            </div>
+        </form>
+        <div class="datos">
+            <p id="datos"></p>
+        </div>
+    </div id="tabla">
+
+    
+    <script src="js/signup.js"></script>
+
+</body>
+
+</html>

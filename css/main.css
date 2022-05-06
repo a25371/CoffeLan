@@ -1,0 +1,210 @@
+/* THE MAIN PART OF THE WEB PAGE */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*NAVBAR*/
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    position: fixed;
+    background-color: #826251;
+    height: 60px;
+    width: 100%;
+    z-index: 15;
+}
+
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+    font-size: larger;
+    height: 60px;
+}
+
+#navbar a:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: #FFE8D1;
+    color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav-right input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.button{
+    padding: 14px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: 2s;
+    transform: rotate(-360deg);
+}
+
+
+/* The hero image */
+.hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    float: right;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.logo {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transition: 1s;
+    transform: scale(1.03);
+}
+
+.slogan {
+    margin-top: 9%;
+    margin-left: 5%;
+    font-size: 300%;
+}
+
+
+/* Body */
+#body {
+    background-color: #FFE8D1;
+    height: 2000px;
+}
+
+
+/* Footer */
+:root {
+    --footer-bg: #6b705c;
+    --color: #f2f3fb;
+    --color-smooth: #d5d9f6;
+    --input-border: #3a456a;
+    --btn-bg-color: #f1f2fc;
+    --btn-hover-bg: #d5d9f6;
+    --btn-color: #1e2641;
+}
+  
+footer {
+    font-size: 16px;
+    background: var(--footer-bg);
+    padding: 2em 5em;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1em;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+  
+footer ul {
+    list-style: none;
+}
+  
+.col {
+    flex: 1;
+}
+  
+.col-title {
+    font-family: "Merriweather", serif;
+    color: var(--color);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 0.5em 0;
+}
+  
+.col-list a {
+    color: var(--color-smooth);
+    text-decoration: none;
+    line-height: 1.4;
+    font-weight: 400;
+}
+  
+.col-list a:hover,
+.col-list a:focus {
+    text-decoration: underline;
+}
+  
+.social-media {
+    display: flex;
+    gap: 0.5em;
+    padding: 0.5em 0;
+}
+  
+.form-title,
+.social-col-title {
+    font-size: 1em;
+    color: var(--color);
+    font-weight: 500;
+}
+  
+.social-media {
+    flex-direction: column;
+}
+  
+.social-media-list {
+    display: flex;
+    gap: 0.5rem;
+}
+  
+.social-media-list a {
+    padding: 0.5em;
+    color: var(--color-smooth);
+    display: flex;
+    border-radius: 0.3em;
+    transition: all 0.25s ease 0s;
+}
+  
+.social-media-list a:hover,
+.social-media-list a:focus {
+    color: var(--color);
+    background: #ffffff1a;
+}
+  
+.social-media-list svg {
+    width: 1.5em;
+    height: 1.5em;
+    transition: all 0.25s ease 0s;
+}
+  
+@media screen and (max-width: 750px) {
+    .slogan {
+        font-size: 250%;
+    }
+
+    footer {
+        padding: 2em;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slogan {
+        font-size: 200%;
+    }
+}
